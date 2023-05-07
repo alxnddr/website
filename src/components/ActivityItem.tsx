@@ -12,12 +12,12 @@ export const ActivityItem = ({ title, details, startYear, endYear }: Props) => {
     <div>
       <div className="flex justify-between flex-col sm:flex-row">
         <span className="font-medium">{title}</span>{" "}
-        <span className="text-sm text-gray-500">
+        <span className="text-sm text-gray-500 font-light">
           {startYear} — {endYear ?? "Present"}
         </span>
       </div>
 
-      <div className="text-sm text-gray-500 ">{details}</div>
+      <div className="text-sm text-gray-500">{details}</div>
     </div>
   );
 };
