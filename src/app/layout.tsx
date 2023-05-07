@@ -1,4 +1,5 @@
 import "./globals.css";
+import cn from "classnames";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,7 +16,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={cn(
+          inter.className,
+          "bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-indigo-50 via-slate-200 to-1ndigo-100"
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }

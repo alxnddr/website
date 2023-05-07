@@ -10,26 +10,28 @@ import {
   RiArrowRightLine,
 } from "react-icons/ri";
 
+const SOCIAL_ICON_SIZE = 20;
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col py-2 sm:py-4 px-2">
-      <Section className="border-b">
-        <div className="flex gap-1 flex-col sm:flex-row justify-between">
+    <main className="flex min-h-screen flex-col pt-2 px-2 pb-16 sm:pt-4 ">
+      <Section className="border-b border-gray-200">
+        <div className="flex flex-col gap-1 sm:flex-row justify-between">
           <div className="flex flex-col">
-            <h1 className="text-xl font-bold">Aleksandr Lesnenko</h1>
+            <h1 className="text-xl font-semibold">Aleksandr Lesnenko</h1>
             <span className="text-slate-800">Software Engineer</span>
           </div>
 
-          <div className="flex flex-col-reverse sm:flex-col">
+          <div className="flex gap-0.5 flex-row-reverse justify-between sm:justify-start sm:flex-col">
             <div className="flex ml-0 sm:ml-auto items-center space-x-1">
               <SocialButton url="https://github.com/alxnddr">
-                <RiGithubFill size={20} />
+                <RiGithubFill size={SOCIAL_ICON_SIZE} />
               </SocialButton>
               <SocialButton url="https://www.linkedin.com/in/lesnenko/">
-                <RiLinkedinFill size={20} />
+                <RiLinkedinFill size={SOCIAL_ICON_SIZE} />
               </SocialButton>
               <SocialButton url="https://twitter.com/a_lesnenko">
-                <RiTwitterFill size={20} />
+                <RiTwitterFill size={SOCIAL_ICON_SIZE} />
               </SocialButton>
             </div>
             <div className="flex text-sm items-center text-slate-800">
@@ -38,20 +40,20 @@ export default function Home() {
           </div>
         </div>
       </Section>
-      <Section className="border-b">
-        <div className="text-sm text-gray-500">
+      <Section className="border-b border-gray-200">
+        <div className="text-sm text-gray-600">
           <div>Naturaleza: Empresa Unipersonal</div>
           <div>Contribuyente: 219368720016</div>
           <div>Fecha Inicio: 01/02/2023</div>
         </div>
       </Section>
-      <Section title="Skills" className="border-b">
-        <div className="text-gray-500 text-sm">
-          React, Typescript, Javascript, HTML, CSS, D3, visx, Redux, Apollo,
-          GrahpQL, NodeJS, Github Actions, Webpack, Docker
+      <Section title="Skills" className="border-b border-gray-200">
+        <div className="text-gray-600 text-sm">
+          React, Typescript, Javascript, HTML, CSS, D3.js, visx, Redux, Apollo,
+          GraphQL, NodeJS, Cypress, Github Actions, Webpack, Docker
         </div>
       </Section>
-      <Section title="Experience" className="border-b">
+      <Section title="Experience" className="border-b border-gray-200">
         <div className="flex flex-col gap-2">
           <ActivityItem
             title="Metabase"
@@ -106,10 +108,10 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section title="Education" className="border-b">
+      <Section title="Education" className="border-b border-gray-200">
         <ActivityItem
           title="Samara State Technical University"
-          details="Computer Information Systems — Master's degree"
+          details="Computer Information Systems — Bachelor's and Master's degree"
           startYear={2009}
           endYear={2014}
         />

@@ -10,7 +10,7 @@ export const SocialButton = ({ url, children }: Props) => {
     <a
       href={url}
       target="blank"
-      className="p-1 rounded hover:bg-gray-100 text-slate-800 font-bold transition-colors"
+      className="p-1 rounded hover:bg-slate-200 text-slate-800 font-bold transition-colors"
     >
       {children}
     </a>
